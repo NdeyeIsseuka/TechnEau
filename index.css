@@ -1,0 +1,746 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: #333333;
+}
+
+header{
+    color: #000;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #0f1269;
+
+}
+
+body{
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.logo span{
+    color: #3337b8;
+}
+
+.menu{
+    display: flex;
+    position: relative;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+.menu li a:hover{
+    color: #6266cc;
+}
+
+.btn-commandes{
+    padding: 10px 20px;
+    background: #bf4040;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-commandes:hover{
+    background: #bf4040;
+    transition: ease-out;
+}
+
+.banniere{
+    top: -15px;
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banniere .accueil {
+    width: 200%;
+    display: flex;
+    animation: defiler 10s linear infinite;  
+}
+
+.accueil img{
+    width: 500px; 
+    height: 449.7px;
+}
+
+@keyframes defiler {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+
+.banniere .contenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%; /* Les 30% de la largeur de la fenêtre */
+    height: 550px;
+    background-color: #0f1269;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banniere .contenu h2{
+    top: 20%;
+    color: rgba(255, 255, 255, 1);
+    font-style: italic;
+    font-family: "Helvetica Neue" , sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.btn{
+    position: absolute;
+    bottom: 200px;
+    left: 20%;
+}
+
+.btn .btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #bf4040;
+    padding: 10px 20px;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.bnt2:hover{
+    letter-spacing: 4px;
+}
+
+.acc .text-accueil{ 
+    text-align: center;
+    font-size: 1em;
+    color: #111;
+    top: O;
+} 
+
+.acc .text-accueil p span{ 
+   font-size: 2em;
+} 
+
+.banniere {
+    margin-bottom: -220px; /
+  }
+  
+.acc {
+    margin-top: -220px;
+}
+
+.Apropos{
+    margin-top: -30px;
+    top: -15px;
+    position: relative;
+    width: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f4f4f4;
+  }
+
+  .image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .caption {
+    margin-top: 20px;
+  }
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vh;
+    background-image: url(bbg.jpg);
+    background-size: cover;
+}
+
+.row .col50{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    color: #fff;
+}
+
+.row .col50 p{
+    text-align: center;
+    color: #fff;
+}
+
+
+.titre-text{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+    text-transform: capitalize; 
+    text-align: justify;
+}
+
+.titre-text span{
+    color: #3337b8;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.titre{
+    display: flex; /*pour aligner les photos sur une ligne*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* pour que les elements soient en colonne*/
+}
+
+.projets{
+    margin-top: -100px;
+    min-height: 40vh;
+}
+
+.projets .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /*si les photos sont nombreuses et occupent toute la ligne, cette fonction permet de rammener les autres a la ligne*/
+    margin-top: 30px;
+}
+
+.projets .titre p:last-child{
+    text-align: center;
+}
+
+.projets .titre .btn1{
+    background-color: #0f1269;
+    color: white;
+    width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    font-size: 0.5;
+}
+
+.projets .contenu .box{
+    width: 200px;
+    margin: 10px;
+    border: 10px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
+    border-top-right-radius: 45px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.projets .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.projets .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-top-right-radius: 45px;
+}
+
+.projets .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.services{
+    margin-top: -100px;
+    min-height: 40vh;
+    background-image: url(fond.jpg);
+    background-size: cover;
+}
+
+.services .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.services p:first-child{
+    text-align: center;
+}
+
+.services p:last-child{
+    text-align: center;
+}
+
+.services .contenu .box{
+    width: 200px;
+    margin: 10px;
+}
+
+.services .contenu .box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 170px;
+    object-fit: cover;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+}
+
+.services .contenu .box h3{
+    color: #111;
+    font-weight: 400px;
+    text-align: center;
+}
+
+
+
+.temoignages{
+    background-image: url(com.jpg);
+    background-size: cover;
+    width: 100%;
+    min-height: 70vh;
+}
+
+.temoignages .contenu{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.temoignages .contenu .box{
+    width: 150px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 0 20px 0;
+    padding: 0px;
+}
+
+.temoignages .contenu .box .imbox{
+    width: 150px;
+    height: 80px;
+    position: relative;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+.temoignages .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0 0 20px;
+}
+
+.temoignages .contenu .box p{
+    color: #111;
+    font-weight: 400px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.temoignages .titre h2{
+    color: #171616;
+}
+
+.temoignages .titre p{
+    color: #060606;
+    font-size: 18px;
+}
+
+.temoignages .titre h3{
+    color: #2a4963;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+
+.contacts{
+    box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
+    width: 100%;
+    background-position: unset;
+    text-align: center;
+    height: 1200px;
+}
+.contacts .titre-text{
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+}
+  
+.info-item {
+    text-align: center; 
+}
+  
+.info-item img {
+    width: 50px; 
+    height: 50px; 
+    margin-right: 10px; 
+}
+
+
+.contactform{
+    padding: 60px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0,0,0, 0.8);
+    max-width: 450px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.contactform .inputB{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputB input{
+    width: 100%;
+    border: 1px solid #555;
+
+}
+
+.contactform .inputB input, textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputB input[type="submit"]{ 
+    max-width: 120px;
+    font-size: 1em;
+    font-weight: 700;
+    color: #ffff;
+    background: #0f1269;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+}
+
+.footer{
+    background: #0f1269;
+}
+
+.suivi{
+    text-align: center;
+    color: #fff;
+}
+
+.suivi img{
+    max-height: 45px;
+    max-width: 60px;
+}
+.footer .copyright{
+    padding: 20px 40px;
+    border-top: 2px;
+    font-size: 0.8em;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .copyright p{
+    color: #fff;
+}
+
+header.sticky{
+    background: #0f1269;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0, 0.05);
+}
+
+header.sticky .logo{
+    color: #fff;
+}
+
+header.sticky .menu li a{
+    color: #fff;
+}
+
+header.sticky li a:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    ;
+}
+
+@media (max-width: 991px) {
+header, header.sticky{
+    padding: 10px 20px;
+}
+
+.banniere {
+    margin-bottom: -120px;
+  }
+  
+.acc {
+    margin-top: -120px;
+}
+
+header .menu li{
+    margin-left: 10px;
+}
+
+header .menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+.menu{
+    display: none;
+    text-align: center;
+}
+
+section{
+    padding: 50px;
+}
+
+.banniere .contenu{
+    width: 35%;
+}
+
+.banniere .contenu h2{
+    font-size: 2em;
+}
+
+.banniere .accueil img{
+    width: 420px; /* Ajustez la largeur des images selon le nombre d'images que vous avez */
+    height: 500px;
+}
+
+.btn{
+    left: 0;
+    bottom: 50px;
+}
+
+.Apropos .Apropostext .Apropostext1 {
+    height: 2px;
+}
+
+.mission{
+    display: none;
+}
+
+.contenup:nth-child(2){
+    font-size: 1.2em;
+}
+
+.services{
+    margin-top: 0px;
+}
+
+.projets{
+    margin-top: 0px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+header .menu.active{
+    width: 50%;
+    height: calc(100% -68px);
+    position: fixed;
+    top: 68px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #bf4040;
+    align-items: center;
+  
+}
+
+.Menuconst{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-size: 30px;
+    background-image: url(menu.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.Menuconst.active{ 
+    background-image: url(close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header.sticky .Menuconst{
+    filter: invert(1);
+}
+
+.temoignages h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+.temoignages p{
+    text-align: center;
+}
+
+.contacts .contactform{ 
+    order: 2;
+    width: 100%;
+    margin-left: 2px;
+    height: 470px; 
+}
+
+.row .col50 {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    flex-direction: column;
+}
+
+}
+
+@media (max-width: 480px){
+.banniere .contenu{
+    font-size: 2.2em;
+    color: #fff;
+}
+    
+.titre-text{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.temoignages h2{
+    font-size: 1.1;
+}
+
+.temoignages p{
+    text-align: center;  
+}
+
+}
+
+
